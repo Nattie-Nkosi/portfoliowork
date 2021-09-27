@@ -16,7 +16,7 @@
     "@types/jest": "^26.0.15",
     "@types/jscodeshift": "0.7.2",
     "@types/node": "^12.0.0",
-    "@types/prettier": "^2.3.2",
+    "@types/prettier": "^2.2.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-redux": "7.1.15",
@@ -30,7 +30,7 @@
     "localforage": "^1.10.0",
     "monaco-editor": "^0.21.3",
     "monaco-jsx-highlighter": "0.0.15",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "7.2.2",
@@ -67,5 +67,5 @@
       "last 1 safari version"
     ]
   },
-  "gitHead": "ed65ab5701097fecedc58a60502d37f7fd66a999"
+  "gitHead": "333f64145fbbad31a6701fec87b1382682b135cd"
 }

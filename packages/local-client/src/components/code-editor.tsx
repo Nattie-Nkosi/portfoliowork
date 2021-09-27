@@ -34,7 +34,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
       () => {},
       () => {},
       undefined,
-      () => {},
+      () => {}
     );
   };
 
@@ -43,27 +43,34 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
     const unformatted = editorRef.current.getModel().getValue();
 
     // format the value
-    const formatted = prettier.format(unformatted, {
-      parser: 'babel',
-      plugins: [parser],
-      useTabs: false,
-      semi: true,
-      singleQuote: true
-    }).replace(/\n$/, '');
+    const formatted = prettier
+      .format(unformatted, {
+        parser: 'babel',
+        plugins: [parser],
+        useTabs: false,
+        semi: true,
+        singleQuote: true,
+      })
+      .replace(/\n$/, '');
 
     // set the formatted value back in the editor
     editorRef.current.setValue(formatted);
   };
 
   return (
-    <div className="editor-wrapper">
-      <button className="button button-format is-primary is-small" onClick={onFormatClick}>Format</button>
-      <MonacoEditor 
+    <div className='editor-wrapper'>
+      <button
+        className='button button-format is-primary is-small'
+        onClick={onFormatClick}
+      >
+        Format
+      </button>
+      <MonacoEditor
         editorDidMount={onEditorDidMount}
         value={initialValue}
-        theme="dark" 
-        language="javascript" 
-        height="100%" 
+        theme='dark'
+        language='javascript'
+        height='100%'
         options={{
           wordWrap: 'on',
           minimap: { enabled: false },
@@ -72,9 +79,9 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
           lineNumbersMinChars: 3,
           fontSize: 16,
           scrollBeyondLastLine: false,
-          automaticLayout: true
+          automaticLayout: true,
         }}
-    />
+      />
     </div>
   );
 };
