@@ -1,7 +1,7 @@
 # JSBOARD
 
 ### This is an interactive coding environment. You can write JavaScript, see it executed, and write comprehensive documentation using markdown.
-![jsboard](https://drive.google.com/file/d/1uxoiuCjv9moKtW6qt2KrF5EAN32VODcd/view?usp=sharing)
+![jsboard](https://user-images.githubusercontent.com/36708180/135358689-6f4e6c8b-cefe-481b-9117-6d4243b81f7a.png)
 
 - Click any text cell to edit it
 - The code in eact code editor is all joined together into one file. If you define a variable in cell #1, you can refer to it in any cell.
