@@ -5,10 +5,9 @@
 
 ---
 
-### How to install JsBoard App
-- install npm package `npx jsboard serve`
-
-- Click any text cell to edit it
+### How to use JsBoard App
+- install npm package `npx jsboard serve`.
+- Click text or code cell to edit it.
 - The code in eact code editor is all joined together into one file. If you define a variable in cell #1, you can refer to it in any cell.
 - You can show any React component, **string**, **number**, or anything else by calling the `show()` function. This is a function build into this environment.
 - Call `show()` multiple time to show multiple values.
@@ -19,6 +18,7 @@
 
 All of your changes get saved to the file you opened jsboard with called notebook.js
 
-### Pc Requirements
-- Node
+### Requirements
+- Node js
 - Code Editor
+- terminal 
