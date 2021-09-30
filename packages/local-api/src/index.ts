@@ -18,7 +18,6 @@ export const serve = (port: number, filename: string, dir: string, useProxy: boo
     const packagePath = require.resolve('@jsboard/local-client/build/index.html');
     app.use(express.static(path.dirname(packagePath)));
   }
-  // some comment
 
   return new Promise<void>((resolve, reject) => {
     app.listen(port, resolve).on('error', reject);
