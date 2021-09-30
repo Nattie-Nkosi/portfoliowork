@@ -6,5 +6,6 @@
   },
   "scripts": {
     "start": "lerna run start --parallel"
-  }
+  },
+  "homepage": "https://github.com/Nutty4616/portfoliowork#readme"
 }
