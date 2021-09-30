@@ -36,11 +36,14 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
       </div>
     )
   }
+  const initialText = (
+    '# JSBOARD \n  This is an interactive coding environment. You can write JavaScript, see it executed, and write comprehensive documentation using markdown. \n - Click any text cell to edit it. \n - The code in eact code editor is all joined together into one file. If you define a variable in cell #1, you can refer to it in any cell. \n - You can show any React component, **string**, **number**, or anything else by calling the `show()` function. This is a function build into this environment. \n - Call `show()` multiple time to show multiple values. \n - Re-order or delete cells using the buttons on the to right. \n - Add new cells by hovering on the divider between each cell. \n --- \n All of your changes get saved to the file you opened jsboard with.'
+  );
 
   return (
     <div className="text-editor card" onClick={() => setEditing(true)}>
       <div className="card-content">
-        <MDEditor.Markdown source={cell.content || 'Click to edit'} />
+        <MDEditor.Markdown source={cell.content || initialText} />
       </div>
     </div>
   );
