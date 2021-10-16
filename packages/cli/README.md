@@ -4,11 +4,11 @@
 ![jsboard](https://user-images.githubusercontent.com/36708180/135358689-6f4e6c8b-cefe-481b-9117-6d4243b81f7a.png)
 
 ---
-### Install
+### How To Run JsBoard
 - `npx jsboard serve` 
 - The program will run on port 4005.
 - While running on port 4005, the file *notebook.js* is created on path folder.
-- if port 4005 is in use run `npx jsboard serve --port XXXX`.
+- If port 4005 is in use run `npx jsboard serve --port XXXX`.
 - Your work will be saved on *notebook.js*.
 - To edit a file run `npx jsboard serve notebook.js --port XXXX`.
 
