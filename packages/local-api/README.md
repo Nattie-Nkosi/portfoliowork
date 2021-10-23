@@ -22,6 +22,94 @@
 - Re-order or delete cells using the buttons on the to right.
 - Add new cells by hovering on the divider between each cell.
 
+### Examples
+Here are several examples: Algorithms
+  *Given a String, return a new string with a reversed order of characters*
+`
+  function reversed(str) {
+    return str.split('').reverse().join('');
+  }
+
+  show(reversed('Hello'));
+`
+This is a simple Algorithm to reverse a function.
+
+---
+
+
+  *Given a String, return a character that is most commonly used in the string*
+  `
+    function maxChar(str) {
+      const charMap = {};
+      let max = 0;
+      let maxChar = '';
+
+      for(let char of str) {
+        if(charMap[char]) {
+          charMap[char]++;
+        } else {
+          charMap[char] = 1;
+        }
+      };
+
+      for(let char in charMap) {
+        if(charMap[char] > max) {
+          max = charMap[char];
+          maxChar = char;
+        }
+      }
+      return maxChar;
+  }
+
+  show(maxChar('apple 123111'));
+`
+Another simple algorithm to find the most commonly used characters in a string.
+
+---
+
+### React Js
+- This application can render react js on the screen(right side). The react js syntax is Traspiled and bundled through [ESBuld](https://esbuild.github.io/).
+- The newest syntax of JavaScript(ES6 +) is transpiled and bundled through [ESBuld](https://esbuild.github.io/).
+
+Examples: 
+
+Cell 1
+
+`
+  import { useState } from 'react';
+
+  const Counter = () => {
+    const [count, setCount] = useState(0);
+    return (
+      <div>
+        <button onClick{() => setCount(count + 1)}>Click</button>
+        <h3>Count: {count}</h3>
+      </div>
+    );
+  };
+
+  show(<Counter />);
+`
+
+Cell 2
+
+`
+  const App = () => {
+    return (
+      <div>
+        <h3>App Says hi!</h3>
+        <i>Counter component will be rendered below...</i>
+        <hr />
+        <!-- Counter was declared in an earlier cell, we can reference it here -->
+        <Counter />
+      </div>
+    );
+  }
+`
+
+
+
+
 ---
 
 All of your changes get saved to the file you opened jsboard with called notebook.js.
