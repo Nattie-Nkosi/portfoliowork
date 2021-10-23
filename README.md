@@ -25,20 +25,19 @@
 ### Examples
 Here are several examples: Algorithms
   *Given a String, return a new string with a reversed order of characters*
-`
+```js
   function reversed(str) {
     return str.split('').reverse().join('');
   }
 
   show(reversed('Hello'));
-`
-This is a simple Algorithm to reverse a function.
+```
 
 ---
 
 
   *Given a String, return a character that is most commonly used in the string*
-  `
+  ```js
     function maxChar(str) {
       const charMap = {};
       let max = 0;
@@ -62,7 +61,7 @@ This is a simple Algorithm to reverse a function.
   }
 
   show(maxChar('apple 123111'));
-`
+```
 Another simple algorithm to find the most commonly used characters in a string.
 
 ---
@@ -75,7 +74,7 @@ Examples:
 
 Cell 1
 
-`
+```js
   import { useState } from 'react';
 
   const Counter = () => {
@@ -89,11 +88,11 @@ Cell 1
   };
 
   show(<Counter />);
-`
+```
 
 Cell 2
 
-`
+```js
   const App = () => {
     return (
       <div>
@@ -105,7 +104,9 @@ Cell 2
       </div>
     );
   }
-`
+
+  show(<Counter>)
+```
 
 
 

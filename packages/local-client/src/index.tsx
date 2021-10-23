@@ -14,6 +14,7 @@ const App = () => {
     </Provider>
     // some comments
     // some comments
+    // some comments
   );
 };
 
