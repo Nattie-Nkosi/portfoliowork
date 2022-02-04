@@ -1,6 +1,6 @@
 {
   "name": "jsboard",
-  "version": "18.0.0",
+  "version": "18.1.0",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jsboard/local-client": "^18.0.0"
+    "@jsboard/local-client": "^18.1.0"
   },
   "devDependencies": {
-    "@jsboard/local-api": "^18.0.0",
+    "@jsboard/local-api": "^18.1.0",
     "@types/node": "^16.9.6",
     "commander": "^8.2.0",
     "esbuild": "0.8.26",
