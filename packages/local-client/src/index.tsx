@@ -12,6 +12,7 @@ const App = () => {
         <CellList />
       </div>
     </Provider>
+    // Some comments
   );
 };
 
