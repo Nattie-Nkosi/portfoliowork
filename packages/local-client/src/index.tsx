@@ -13,6 +13,8 @@ const App = () => {
       </div>
     </Provider>
     // Some comments
+    // Some comments
+    // Some comments
   );
 };
 
